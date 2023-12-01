@@ -1,0 +1,577 @@
+
+
+
+
+/* star (*) selects all the selctors  and we're*/
+/* removing all the defaults  of the browser */
+
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    .hidden{
+        display: none;
+    }
+    
+    
+    
+    #h2{
+        font-size: 200px;
+        text-align: center; 
+        margin-top: 30px;
+    }
+    
+    #h2 span{
+        font-size: 250px;
+        background: linear-gradient(to right, rgba(70, 130, 180, 1),rgb(82, 169, 255));
+    
+        -webkit-background-clip:text ;
+        color: transparent;
+    }
+    
+    
+    
+    body{
+    background-image: url(../images/background-final.webp);
+    background-color: rgb(0, 0, 0);
+    /* these properties are inherited by the childeren elements. */
+    
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Chalkboy';
+    text-decoration: none;
+    color: white;
+    
+    }
+    
+      
+      
+    main{
+    
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100vh;
+        /* flexh wrap makes the content responsive and it 
+        stacks the content. */
+        margin-top: -75px;
+    }
+    
+    
+    
+    article{
+        width:auto;
+        height: 200px;
+        /* height: 200px; */
+        border: none;
+        border-radius: 8px;
+        margin: 0;
+        text-align: left;
+        position: relative;
+        padding: 80px;
+        display: inline;
+        
+       
+    }
+    
+    *
+    article::before {
+        content: "";
+        position: absolute;
+        background-image: url('../images/chalk-frame-1.png');
+        top: -0px;
+        left: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        
+        margin: 0;
+        z-index: -1;
+    
+    }
+    
+    
+    /* .todo, .inprogress, .done {
+        background-image: url('../images/chalk-frame-1.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 100px;
+    
+    } */
+    
+    *
+    
+    
+    article h2{
+        color: rgba(145, 255, 145, 1); 
+        
+        /* padding: 4px 88px ; top and bottom left and right */
+    }
+    
+    article:first-of-type{
+        /* border: 4px solid grey; */
+    /* first od type select the first mentioned article in the html 
+    and customises it */
+    }
+    
+    
+        
+    
+    
+    .to-do, .in-progress, .done{
+    padding: 20px;
+    margin: 0;
+    
+    }
+    
+     
+    
+    #to-do h2, #in-progress h2, #done h2{
+        margin-left: 20px;
+    }
+    
+    
+    #in-progress{
+        border: 4px transparent rgb(0, 0, 0);
+    }
+    
+    #in-progress h2{
+        color: rgba(255, 145, 145, 1);
+    }
+    
+    #done h2{
+        color: rgba(255, 255, 153, 1);
+    
+    }
+    
+    .to-do > li > span{
+        color:   rgba(145, 255, 145, 1); 
+    }
+    .in-progress > li > span{
+        color: rgba(255, 145, 145, 1);
+    }
+    .done > li > span{
+        color:  rgba(255, 255, 153, 1);
+    }
+    
+    
+    
+     ul {
+        list-style-type: none;
+     }
+    
+     ul li{
+        padding: 6px 8px;
+        text-transform: uppercase;
+     }
+     /* 
+     .to-do li:nth-child(odd){
+        background-color: rgba(255, 255, 255, .2)
+    
+     }
+    
+     .in-progress li:nth-child(odd){
+        background-color: rgba(255, 205, 205,  .5)
+    
+     }
+     .done li:nth-child(odd){
+        background-color: rgba(21, 255, 0, 0.5)
+    
+     } */
+    
+     @font-face {
+        font-family: 'Chalkboy';
+        src: local('Chalkboy'), url('../assets/Chalkboy.ttf') format('opentype'); /* Update the path accordingly */
+        font-weight: normal;
+        font-style: normal; 
+        
+        
+      }
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    /* psuedo selector css */
+    
+    
+    input[ type="checkbox"] {
+        margin-right: 8px;
+    }
+    
+    
+    /* TO-DO PSUEDO SELECTOR */
+    
+    
+    #td1[type="checkbox"]:checked + span::after {
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        text-align: center;
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    @keyframes fadeInAndOut {
+        0% {
+            opacity: 0;
+        }
+        5% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0; 
+        }
+    }
+    
+    #td2[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    
+    
+    #td3[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #td4[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #td5[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #td6[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+      
+    
+    
+     /* IN PROGRESS PSUEDO SELECTOR */
+    
+    
+    
+    #ip1[type="checkbox"]:checked + span::after{
+        content: "\1F44D";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    
+    } #ip2[type="checkbox"]:checked + span::after{
+        content: "\1F44D";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+      animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #ip3[type="checkbox"]:checked + span::after{
+        content: "\1F44D";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #ip4[type="checkbox"]:checked + span::after{
+        content: "\1F44D";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #ip5[type="checkbox"]:checked + span::after{
+        content: "\1F44D";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    
+    
+    
+    #ip6[type="checkbox"]:checked + span::after{
+        content: "\1F44D";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        /* background-color: green; */
+        /* border: 4px solid #20b320; */
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    
+    
+    
+    /* DONE LIST PSUEDO SELECTOR */
+    
+    
+    
+    
+    #d1[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #d2[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #d3[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #d4[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    #d5[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    
+    #d6[type="checkbox"]:checked + span::after{
+        content: "\1F3C1";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: green;
+        border: 4px solid #20b320;
+        font-size: 24px;
+        position: absolute;
+        /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    
+        top: 10px;
+        right: 18px;
+        animation: fadeInAndOut 15s ease-out forwards; 
+    }
+    
+    
+    
+    
+    
