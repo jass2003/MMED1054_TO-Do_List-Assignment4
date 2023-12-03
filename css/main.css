@@ -1,7 +1,6 @@
 
 
 
-
 /* star (*) selects all the selctors  and we're*/
 /* removing all the defaults  of the browser */
 
@@ -63,6 +62,7 @@
         /* flexh wrap makes the content responsive and it 
         stacks the content. */
         margin-top: -75px;
+        
     }
     
     
@@ -213,32 +213,35 @@
     
     input[ type="checkbox"] {
         margin-right: 8px;
+        margin-top: -19px;
     }
     
     
     /* TO-DO PSUEDO SELECTOR */
     
     
+    
+    
     #td1[type="checkbox"]:checked + span::after {
-        content: "\1F3C1";
+        content: "\1F4D6";
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         text-align: center;
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+         animation: fadeInAndOut 10s ease-out forwards; 
     }
     
     @keyframes fadeInAndOut {
         0% {
             opacity: 0;
         }
-        5% {
+        15% {
             opacity: 1;
         }
         100% {
@@ -247,95 +250,95 @@
     }
     
     #td2[type="checkbox"]:checked + span::after{
-        content: "\1F3C1";
+        content: "\1F4D6";
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     
     
     #td3[type="checkbox"]:checked + span::after{
-        content: "\1F3C1";
+        content: "\1F4D6 ";
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #td4[type="checkbox"]:checked + span::after{
-        content: "\1F3C1";
+        content: " \1F4D6";
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #td5[type="checkbox"]:checked + span::after{
-        content: "\1F3C1";
+        content: " \1F4D6 ";
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #td6[type="checkbox"]:checked + span::after{
-        content: "\1F3C1";
+        content: "\1F4D6";
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
       
     
@@ -349,34 +352,34 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     
     } #ip2[type="checkbox"]:checked + span::after{
         content: "\1F44D";
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-      animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+      animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #ip3[type="checkbox"]:checked + span::after{
@@ -384,17 +387,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #ip4[type="checkbox"]:checked + span::after{
@@ -402,17 +405,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #ip5[type="checkbox"]:checked + span::after{
@@ -420,17 +423,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     
@@ -443,15 +446,15 @@
         border-radius: 50%;
         /* background-color: green; */
         /* border: 4px solid #20b320; */
-        font-size: 24px;
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     
@@ -467,17 +470,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 40px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #d2[type="checkbox"]:checked + span::after{
@@ -485,17 +488,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 40px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #d3[type="checkbox"]:checked + span::after{
@@ -503,17 +506,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 40px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #d4[type="checkbox"]:checked + span::after{
@@ -521,17 +524,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     #d5[type="checkbox"]:checked + span::after{
@@ -539,17 +542,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     
@@ -558,17 +561,17 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: green;
-        border: 4px solid #20b320;
-        font-size: 24px;
+        /* background-color: green;
+        border: 4px solid #20b320; */
+        font-size: 28px;
         position: absolute;
         /* align-items: center;
     justify-content: center; */
     text-align: center;
     
         top: 10px;
-        right: 18px;
-        animation: fadeInAndOut 15s ease-out forwards; 
+        right: 35px;
+        animation: fadeInAndOut 10s ease-out forwards;
     }
     
     
